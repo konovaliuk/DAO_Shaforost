@@ -1,0 +1,11 @@
+/home/anna/Documents/pis_1/src/main/java/org/gallery/entities/User.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/entities/Exposition.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/entities/Order.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/entities/Showroom.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/entities/Theme.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/dao/ExpositionsDAO.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/dao/impl/UserDAOImpl.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/Main.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/dao/UserDAO.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/connection/ConnectionPool.java
+/home/anna/Documents/pis_1/src/main/java/org/gallery/entities/Tickets.java
