@@ -15,17 +15,20 @@ public class ExpositionDAOImpl extends BasicImpl implements ExpositionsDAO {
     private final String COLUMN_ID = "id";
     private final String COLUMN_NAME = "name";
     private final String COLUMN_DESCRIPTION = "description";
+    private final String COLUMN_SHOWROOM = "showroom";
 
     private Exposition getExposition(ResultSet resultSet) throws SQLException {
 
         long id = resultSet.getLong(COLUMN_ID);
         String name = resultSet.getString(COLUMN_NAME);
         String description = resultSet.getString(COLUMN_DESCRIPTION);
+        String showroom = resultSet.getString(COLUMN_SHOWROOM);
 
         Exposition exposition = new Exposition();
         exposition.setId(id);
         exposition.setName(name);
         exposition.setDescription(description);
+        exposition.setShowroom(showroom);
 
         return exposition;
     }
@@ -104,6 +107,7 @@ public class ExpositionDAOImpl extends BasicImpl implements ExpositionsDAO {
             st.setString(2, exposition.getName());
             st.setString(3, exposition.getDescription());
             st.setString(4, exposition.getShowroom());
+            st.executeUpdate();
         }catch (SQLException e){
             e.printStackTrace();
         }

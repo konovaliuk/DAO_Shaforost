@@ -105,7 +105,7 @@ public class UserDAOImpl  implements UserDAO {
            st.setString(3,user.getLastName());
            st.setString(4, user.getEmail());
            st.setString(5, user.getPassword());
-
+            st.executeUpdate();
        } catch (SQLException e){
            e.printStackTrace();
        }

@@ -73,9 +73,10 @@ public class TicketDaoImpl extends BasicImpl implements TicketDao {
             ResultSet resultSet = Main.statement.executeQuery(query);
             while (resultSet.next()){
                 ticket = getTicket(resultSet);
+                System.out.print(ticket);
             }
 
-        } catch (Exception e){
+        } catch (SQLException e){
             e.printStackTrace();
         }
 
@@ -111,7 +112,6 @@ public class TicketDaoImpl extends BasicImpl implements TicketDao {
             ResultSet resultSet = Main.statement.executeQuery(query);
             while(resultSet.next()) {
                 int count = getCount(resultSet);
-                System.out.print(count);
                 return count;
             }
         }catch (SQLException e){
@@ -138,6 +138,7 @@ public class TicketDaoImpl extends BasicImpl implements TicketDao {
             st.setLong(2, ticket.getUserId());
             st.setLong(3, ticket.getExpositionId());
             st.setLong(4, ticket.getPrice());
+            st.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();
         }
