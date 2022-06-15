@@ -42,6 +42,7 @@ public class ExpositionDAOImpl extends BasicImpl implements ExpositionsDAO {
             ResultSet resultSet = Main.statement.executeQuery(request);
             while(resultSet.next()){
                 exposition = getExposition(resultSet);
+                System.out.print(exposition);
             }
 
         } catch (SQLException e) {

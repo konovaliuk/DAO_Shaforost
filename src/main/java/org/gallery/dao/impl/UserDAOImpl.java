@@ -100,7 +100,7 @@ public class UserDAOImpl  implements UserDAO {
 
        try {
            PreparedStatement st = Main.conn.prepareStatement(query);
-           st.setLong(1, user.getId());
+           st.setLong (1, user.getId());
            st.setString(2, user.getFirstName());
            st.setString(3,user.getLastName());
            st.setString(4, user.getEmail());
