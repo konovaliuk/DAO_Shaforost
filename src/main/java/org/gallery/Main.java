@@ -8,7 +8,7 @@ import org.gallery.entities.Exposition;
 import org.gallery.entities.Tickets;
 import org.gallery.entities.User;
 
-import java.lang.management.ThreadInfo;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -37,10 +37,11 @@ public class Main {
 
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args)  {
 
         Main app = new Main();
         app.connect();
+
 
 //------------User DAO Demonstration-------------------//
 //       UserDAOImpl UserDao = new UserDAOImpl();
@@ -74,7 +75,7 @@ public class Main {
 
 //------------Ticket DAO Demonstration-------------------//
 
-        TicketDaoImpl TicketDao = new TicketDaoImpl();
+//        TicketDaoImpl TicketDao = new TicketDaoImpl();
 //
 //        System.out.print("Create first Ticket: " + TicketDao.create(new Tickets(1, 1, 1, 100)));
 //        System.out.print("\nCreate second ticket: " + TicketDao.create(new Tickets(2, 2, 2, 100)));
@@ -82,11 +83,11 @@ public class Main {
 //        TicketDao.findAll();
 //
 //        int count = TicketDao.countByExpositionId(1);
-//        System.out.print("Numbet of tickets for a given Exposition: " + count + "\n");
+//        System.out.print("Number of tickets for a given Exposition: " + count + "\n");
 //          TicketDao.findById(1);
 
 
-//          TicketDao.findByUserId(2);
+//        TicketDao.findByUserId(2);
 //        TicketDao.delete(1);
 //        TicketDao.delete(2);
 
